@@ -12,7 +12,7 @@ export const App = () => {
   const fedback = { good, neutral, bad };
 
   const handleIncrement = e => {
-    const { name } = e.target;
+    const name = e.target.name;
     switch (name) {
       case 'good':
         setGood(prevGood => prevGood + 1);
